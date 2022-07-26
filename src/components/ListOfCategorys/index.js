@@ -1,16 +1,17 @@
 import React from "react";
 import { Category } from "../Category";
 import { List, Item } from "./styles";
+import {categories} from "../../../api/db.json"
 
 export const ListofCategorys = (props) => {
-  const moked = [1,2,3,4]
+ 
   return (
     <List>
       {
-        moked.map((e)=>{
+        categories.map((e)=>{
           return (
-            <Item key={e}>
-              <Category/>
+            <Item key={e.id}>
+              <Category {...e}/>
             </Item>
           )
         })
