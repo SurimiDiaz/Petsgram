@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
-const container = document.getElementById("app");
+import {App} from "./App";
+const container = document.getElementById("root");
 const root = ReactDOM.createRoot(container);
 
-root.render(<h1>KIOBOLE mi abrilin miranda</h1>);
+root.render(<App/>);
