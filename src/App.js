@@ -2,6 +2,7 @@ import React from "react";
 import { GlobalStyle } from "./GlobalStyles";
 import { ListofCategorys } from "./components/ListOfCategorys";
 import { ListOfPhotoCard } from "./components/ListOfPhotoCard";
+import { Logo } from "./components/Logo";
 
 export const App = () => {
   return (
@@ -12,6 +13,7 @@ export const App = () => {
       </div>
       <div>
         <GlobalStyle/>
+        <Logo/>
         <ListofCategorys />
         <ListOfPhotoCard/>
       </div>
