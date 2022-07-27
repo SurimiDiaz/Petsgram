@@ -8,14 +8,10 @@ export const App = () => {
   return (
     <div>
       <div>
-        <h1>KIOBOLE mi abrilin miamor</h1>
-        
-      </div>
-      <div>
-        <GlobalStyle/>
-        <Logo/>
+        <GlobalStyle />
+        <Logo />
         <ListofCategorys />
-        <ListOfPhotoCard/>
+        <ListOfPhotoCard />
       </div>
     </div>
   );
