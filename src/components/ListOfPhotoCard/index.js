@@ -1,10 +1,13 @@
 import React from "react";
-//import { photos } from "../../../api/db.json";
+
 import { PhotoCard } from "../PhotoCard";
 import { useGetPhotos } from "../../hooks/useGetPhotos";
+import { useParams } from "react-router-dom";
 
-export const ListOfPhotoCardsComponent = ({ categoryId }) => {
-  const { loading, error, data } = useGetPhotos(categoryId);
+export const ListOfPhotoCardsComponent = () => {
+  const { id } = useParams();
+
+  const { loading, error, data } = useGetPhotos(id);
 
   if (error) {
     return <h2>Internal Server Error</h2>;
